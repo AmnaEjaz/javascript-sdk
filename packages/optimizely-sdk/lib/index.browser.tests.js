@@ -15,8 +15,10 @@
  */
 import { assert } from 'chai';
 import sinon from 'sinon';
-import * as logging from '@optimizely/js-sdk-logging';
-import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+// import * as logging from '@optimizely/js-sdk-logging';
+var logging = require('./logging/logger');
+// import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+var eventProcessor = require('../event-processor/eventProcessor');
 
 import Optimizely from './optimizely';
 import testData from './tests/test_data';

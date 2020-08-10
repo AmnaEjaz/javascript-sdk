@@ -14,7 +14,8 @@
  * limitations under the License.                                           *
  ***************************************************************************/
 
-import { NOTIFICATION_TYPES as notificationTypesEnum } from '@optimizely/js-sdk-utils';
+// import { NOTIFICATION_TYPES as notificationTypesEnum } from '@optimizely/js-sdk-utils';
+var notificationTypesEnum = require('../../pkg-utils/index');
 
 /**
  * Contains global enums used throughout the library

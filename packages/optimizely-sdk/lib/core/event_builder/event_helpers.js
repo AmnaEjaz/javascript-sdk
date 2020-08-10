@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { getLogger } from '@optimizely/js-sdk-logging';
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
 
 import fns from '../../utils/fns';
 import projectConfig from '../project_config';

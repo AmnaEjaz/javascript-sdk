@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-import { getLogger } from '@optimizely/js-sdk-logging';
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
 import { makeGetRequest } from './nodeRequest';
 import HttpPollingDatafileManager from './httpPollingDatafileManager';
 import { Headers, AbortableRequest } from './http';

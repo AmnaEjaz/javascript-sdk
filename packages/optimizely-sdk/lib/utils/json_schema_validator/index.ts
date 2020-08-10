@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
+
 import { validate as jsonSchemaValidator } from 'json-schema';
 
 import { ERROR_MESSAGES } from '../enums';

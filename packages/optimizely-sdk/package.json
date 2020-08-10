@@ -17,7 +17,7 @@
     "test-umdbrowser": "npm run build-browser-umd && karma start karma.umd.conf.js --single-run",
     "prebuild": "npm run clean",
     "build": "rollup -c && tsc ",
-    "tsc" : "tsc",
+    "tsc": "tsc",
     "build-browser-umd": "rollup -c --config-umd",
     "precover": "nyc npm test",
     "cover": "nyc report -r lcov",
@@ -42,10 +42,9 @@
   },
   "homepage": "https://github.com/optimizely/javascript-sdk/tree/master/packages/optimizely-sdk",
   "dependencies": {
-    "@optimizely/js-sdk-datafile-manager": "^0.7.0",
-    "@optimizely/js-sdk-event-processor": "^0.6.0",
     "@optimizely/js-sdk-logging": "^0.1.0",
-    "@optimizely/js-sdk-utils": "^0.4.0",
+    "@types/node": "^12.7.4",
+    "@types/uuid": "^8.0.1",
     "json-schema": "^0.2.3",
     "murmurhash": "0.0.2"
   },
@@ -80,7 +79,11 @@
     "ts-loader": "^7.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.3.3333",
-    "webpack": "^4.42.1"
+    "webpack": "^4.42.1",
+    "decompress-response": "^4.2.1",
+    "@react-native-community/async-storage": "^1.2.0",
+    "@react-native-community/netinfo": "^5.9.4",
+    "uuid": "^3.3.2"
   },
   "publishConfig": {
     "access": "public"

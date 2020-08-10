@@ -15,9 +15,13 @@
  ***************************************************************************/
 import { assert } from 'chai';
 import sinon from 'sinon';
-import { sprintf } from '@optimizely/js-sdk-utils';
-import * as eventProcessor from '@optimizely/js-sdk-event-processor';
-import * as logging from '@optimizely/js-sdk-logging';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../pkg-utils/index');
+// import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+var eventProcessor = require('../event-processor/eventProcessor');
+
+// import * as logging from '@optimizely/js-sdk-logging';
+var logging = require('../logging/logger');
 
 import Optimizely from './';
 import AudienceEvaluator from '../core/audience_evaluator';

@@ -291,3 +291,4 @@ declare module '@optimizely/optimizely-sdk/lib/plugins/event_dispatcher' {}
 declare module '@optimizely/optimizely-sdk/lib/utils/json_schema_validator' {}
 
 declare module '@optimizely/optimizely-sdk/lib/plugins/error_handler' {}
+

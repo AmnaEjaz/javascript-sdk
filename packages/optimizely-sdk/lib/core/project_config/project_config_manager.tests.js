@@ -16,9 +16,14 @@
 import sinon from 'sinon';
 import { assert } from 'chai';
 import { cloneDeep } from 'lodash';
-import { sprintf } from '@optimizely/js-sdk-utils';
-import * as logging from '@optimizely/js-sdk-logging';
-import * as datafileManager from '@optimizely/js-sdk-datafile-manager';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
+// import * as logging from '@optimizely/js-sdk-logging';
+var logging = require('../logging/logger');
+
+// import * as datafileManager from '../../datafile-manager/src/datafileManager.ts';
+var datafileManager = require('../../datafile-manager/datafileManager.ts');
+
 
 import projectConfig from './index';
 import { ERROR_MESSAGES, LOG_MESSAGES } from '../../utils/enums';

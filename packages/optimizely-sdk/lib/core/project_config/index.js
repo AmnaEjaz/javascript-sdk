@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { sprintf, objectValues } from '@optimizely/js-sdk-utils';
+// import { sprintf, objectValues } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
+var objectValues = require('../../pkg-utils/index');
 
 import fns from '../../utils/fns';
 import {

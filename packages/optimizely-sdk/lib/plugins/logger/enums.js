@@ -13,4 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { LOG_LEVEL as LogLevel } from '@optimizely/js-sdk-logging';
+export { LOG_LEVEL as LogLevel} from '../../logging/models';
+
+export { LogHandler } from '../../logging/models';
+
+export { ErrorHandler } from '../../logging/errorHandler'; 
+

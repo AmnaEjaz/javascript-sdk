@@ -15,7 +15,8 @@
  */
 import { assert } from 'chai';
 import sinon from 'sinon';
-import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+// import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+var eventProcessor = require('../event-processor/eventProcessor');
 
 import enums from './utils/enums';
 import Optimizely from './optimizely';

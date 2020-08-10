@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-import { getLogger } from '@optimizely/js-sdk-logging';
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../pkg-utils/index');
 import { DatafileManager, DatafileManagerConfig, DatafileUpdate } from './datafileManager';
 import EventEmitter, { Disposer } from './eventEmitter';
 import { AbortableRequest, Response, Headers } from './http';

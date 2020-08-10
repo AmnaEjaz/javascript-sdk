@@ -15,7 +15,8 @@
  ***************************************************************************/
 
 import { assert } from 'chai';
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
 
 import { validate } from './';
 import { ERROR_MESSAGES } from '../enums';

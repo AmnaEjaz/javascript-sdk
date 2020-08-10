@@ -13,10 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
 
-import { EventTags } from '@optimizely/js-sdk-event-processor';
-import { LoggerFacade } from '@optimizely/js-sdk-logging';
+// import { EventTags } from '@optimizely/js-sdk-event-processor';
+var EventTags = require('../../event-processor/events.ts');
+
+// import { LoggerFacade } from '@optimizely/js-sdk-logging';
+var LoggerFacade = require('../../logging/models');
+
 
 import {
   LOG_LEVEL,
@@ -37,7 +42,7 @@ const VALUE_EVENT_METRIC_NAME = RESERVED_EVENT_KEYWORDS.VALUE;
  * @param {LoggerFacade} logger
  * @return {number|null}
  */
-export function getRevenueValue(eventTags: EventTags, logger: LoggerFacade): number | null {
+export function getRevenueValue(eventTags: typeof EventTags, logger: typeof LoggerFacade): number | null {
   if (eventTags.hasOwnProperty(REVENUE_EVENT_METRIC_NAME)) {
     const rawValue = eventTags[REVENUE_EVENT_METRIC_NAME];
     let parsedRevenueValue;
@@ -66,7 +71,7 @@ export function getRevenueValue(eventTags: EventTags, logger: LoggerFacade): num
  * @param {LoggerFacade} logger
  * @return {number|null}
  */
-export function getEventValue(eventTags: EventTags, logger: LoggerFacade): number | null {
+export function getEventValue(eventTags: typeof EventTags, logger: typeof LoggerFacade): number | null {
   if (eventTags.hasOwnProperty(VALUE_EVENT_METRIC_NAME)) {
     const rawValue = eventTags[VALUE_EVENT_METRIC_NAME];
     let parsedEventValue;

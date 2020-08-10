@@ -13,8 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { sprintf } from '@optimizely/js-sdk-utils';
-import { getLogger } from '@optimizely/js-sdk-logging';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
+
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
 
 import fns from '../../utils/fns';
 import {

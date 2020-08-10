@@ -16,7 +16,8 @@
 import sinon from 'sinon';
 import { assert } from 'chai';
 import cloneDeep from 'lodash/cloneDeep';
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
 
 import DecisionService from './';
 import bucketer from '../bucketer';

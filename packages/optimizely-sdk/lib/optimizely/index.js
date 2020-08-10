@@ -13,8 +13,11 @@
  * See the License for the specific language governing permissions and      *
  * limitations under the License.                                           *
  ***************************************************************************/
-import { sprintf, objectValues } from '@optimizely/js-sdk-utils';
-import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+// import { sprintf, objectValues } from '@optimizely/js-sdk-utils';
+var objectValues = require('../pkg-utils/index');
+var sprintf = require('../pkg-utils/index');
+// import * as eventProcessor from '@optimizely/js-sdk-event-processor';
+var eventProcessor = require('../event-processor/eventProcessor');
 
 import fns from '../utils/fns'
 import { validate } from '../utils/attributes_validator';

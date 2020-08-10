@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and      *
  * limitations under the License.                                           *
  ***************************************************************************/
-import { sprintf } from'@optimizely/js-sdk-utils';
+// import { sprintf } from'@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
 
 import bucketer from '../bucketer';
 import enums from '../../utils/enums';

@@ -15,7 +15,8 @@
  */
 import sinon from 'sinon';
 import { assert } from 'chai';
-import { getLogger } from '@optimizely/js-sdk-logging';
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
 
 import AudienceEvaluator from './index';
 import conditionTreeEvaluator from '../condition_tree_evaluator';

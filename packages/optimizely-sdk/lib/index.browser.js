@@ -13,15 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { 
-  getLogger,
-  setLogHandler,
-  setLogLevel,
-  setErrorHandler,
-  getErrorHandler,
-  LogLevel,
-} from '@optimizely/js-sdk-logging';
-import { LocalStoragePendingEventsDispatcher } from '@optimizely/js-sdk-event-processor';
+// import { 
+//   getLogger,
+//   setLogHandler,
+//   setLogLevel,
+//   setErrorHandler,
+//   getErrorHandler,
+//   LogLevel,
+// } from '@optimizely/js-sdk-logging';
+var getLogger = require('./logging/logger')
+var setLogHandler = require('./logging/logger')
+var setLogLevel = require('./logging/logger')
+var setErrorHandler = require('./logging/errorHandler')
+var getErrorHandler = require('./logging/errorHandler')
+var LogLevel = require('./logging/models')
+
+// import { LocalStoragePendingEventsDispatcher } from '@optimizely/js-sdk-event-processor';
+var LocalStoragePendingEventsDispatcher = require('./event-processor/pendingEventsDispatcher');
 
 import fns from './utils/fns';
 import configValidator from './utils/config_validator';

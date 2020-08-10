@@ -13,14 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { 
-  getLogger,
-  setLogHandler,
-  setLogLevel,
-  setErrorHandler,
-  getErrorHandler,
-  LogLevel,
-} from '@optimizely/js-sdk-logging';
+// import { 
+//   getLogger,
+//   setLogHandler,
+//   setLogLevel,
+//   setErrorHandler,
+//   getErrorHandler,
+//   LogLevel,
+// } from '@optimizely/js-sdk-logging';
+var getLogger = require('./logging/logger')
+var setLogHandler = require('./logging/logger')
+var setLogLevel = require('./logging/logger')
+var setErrorHandler = require('./logging/errorHandler')
+var getErrorHandler = require('./logging/errorHandler')
+var LogLevel = require('./logging/models')
+var logging = require('../logging/logger');
 
 import fns from './utils/fns';
 import enums from './utils/enums';

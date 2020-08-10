@@ -16,7 +16,8 @@
 
 import { AbortableRequest, Response, Headers } from './http';
 import { REQUEST_TIMEOUT_MS } from './config';
-import { getLogger } from '@optimizely/js-sdk-logging';
+// import { getLogger } from '@optimizely/js-sdk-logging';
+var getLogger = require('../logging/logger');
 
 const logger = getLogger('DatafileManager');
 

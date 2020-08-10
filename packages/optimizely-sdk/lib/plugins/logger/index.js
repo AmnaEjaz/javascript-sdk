@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ConsoleLogHandler } from '@optimizely/js-sdk-logging';
+// import { ConsoleLogHandler } from '@optimizely/js-sdk-logging';
+var ConsoleLogHandler = require('../../logging/models');
+
 
 function NoOpLogger() {}
 

@@ -13,8 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { LogLevel } from '@optimizely/js-sdk-logging';
-import { sprintf } from '@optimizely/js-sdk-utils';
+// import { LogLevel } from '@optimizely/js-sdk-logging';
+var LogLevel = require('../../logging/models');
+
+// import { sprintf } from '@optimizely/js-sdk-utils';
+var sprintf = require('../../pkg-utils/index');
+
 
 function getLogLevelName(level) {
   switch (level) {
